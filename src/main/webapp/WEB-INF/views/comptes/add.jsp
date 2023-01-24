@@ -22,10 +22,9 @@
 		<div class="div">
 			<select>
 				<option selected disabled>-- Selectionner un droit --</option>
-				<!--  <c:forEach items ="${droits }" var="droit">
+				<c:forEach items ="${droits }" var="droit">
 					<option value="${droit.id}">${droit.name}</option>
 				</c:forEach>
-				-->
 			</select>
 		</div>
 		<div>
