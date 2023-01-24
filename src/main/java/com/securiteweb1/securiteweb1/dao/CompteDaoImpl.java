@@ -69,10 +69,13 @@ public class CompteDaoImpl implements CompteDao {
 	public Compte logon(String username, String password) {
 		try {
 			Compte compte1 = new Compte();
-			List<Compte> result = this.session.createQuery("FROM Compte", Compte.class).getResultList();
+			System.out.print("je suis la");
+			List<Compte> result = this.session.createQuery("from comptes", Compte.class).list();
+			System.out.print("je suis encore la");
 			for(Compte value : result ) {
 				if(username.equals(value.getUsername()) && password.equals(value.getPassword())) {
-					compte1 = value;
+					compte1.setPassword(value.getPassword());
+					compte1.setUsername(value.getUsername());
 				}
 			}
 			return compte1;

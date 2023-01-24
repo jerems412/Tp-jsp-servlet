@@ -8,9 +8,10 @@ public class generator {
 	public static void main(String[] args) {
 		CompteDao c = new CompteDaoImpl();
 		Compte compte = new Compte();
-		compte.setPassword("password");
-		compte.setUsername("jeremy");
-		System.out.print(c.logon(compte.getUsername(),compte.getPassword()).getUsername());;
+		compte.setUsername("test");
+		compte.setPassword("test");
+		c.save(compte);
+		System.out.print("valider");
 
     }
 

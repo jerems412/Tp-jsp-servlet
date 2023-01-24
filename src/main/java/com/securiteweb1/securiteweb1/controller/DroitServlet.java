@@ -47,8 +47,8 @@ public class DroitServlet extends HttpServlet {
 		if(request.getSession().getAttribute("userConnect") == null) {
 			response.sendRedirect("Login");
 		} else {
-			//List<Droit> droits = droitdao.findAll();
-			//request.setAttribute("droits", droits);
+			List<Droit> droits = droitdao.findAll();
+			request.setAttribute("droits", droits);
 			request.getRequestDispatcher("/WEB-INF/views/droits/list.jsp").forward(request, response);
 		}
 	}

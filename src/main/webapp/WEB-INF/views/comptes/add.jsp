@@ -17,14 +17,15 @@
 			<input type="text" name="username" placeholder="Entrer le nom">
 		</div>
 		<div class="div">
-			<input type="password" name="password" placeholder="Entrer le nom">
+			<input type="password" name="password" placeholder="Entrer le mot de passe">
 		</div>
 		<div class="div">
 			<select>
 				<option selected disabled>-- Selectionner un droit --</option>
-				<c:forEach items ="${droits }" var="droit">
+				<!--  <c:forEach items ="${droits }" var="droit">
 					<option value="${droit.id}">${droit.name}</option>
 				</c:forEach>
+				-->
 			</select>
 		</div>
 		<div>

@@ -53,10 +53,6 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*Compte compte = new Compte();
-		compte.setUsername(request.getParameter("login"));
-		compte.setPassword(request.getParameter("password"));
-		comptedao.save(compte);*/
 		try {
 			Compte compte1 = comptedao.logon(request.getParameter("login"),request.getParameter("password"));
 			HttpSession session1 = request.getSession();

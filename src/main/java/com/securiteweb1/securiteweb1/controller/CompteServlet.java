@@ -51,6 +51,8 @@ public class CompteServlet extends HttpServlet {
 		if(request.getSession().getAttribute("userConnect") == null) {
 			response.sendRedirect("Login");
 		} else {
+			List<Compte> comptes = comptedao.findAll();
+			request.setAttribute("comptes", comptes);
 			request.getRequestDispatcher("/WEB-INF/views/comptes/list.jsp").forward(request, response);
 		}
 	}

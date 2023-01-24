@@ -18,13 +18,28 @@
 		<th>NOM</th>
 		<th>ACTIONS</th>
 	</tr>
-	<c:forEach items ="${comptes }" var="compte">
+	<tr>
+		<td>1</td>
+		<td>jeremy</td>
+		<td><button>Delete</button></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>jeremy1</td>
+		<td><button>Delete</button></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>david</td>
+		<td><button>Delete</button></td>
+	</tr>
+	<!-- <c:forEach items ="${comptes }" var="compte">
 		<tr>
 			<td>${compte.id }</td>
 			<td>${compte.username }</td>
 			<td><button>Delete</button></td>
 		</tr>
-		</c:forEach>
+		</c:forEach> -->
 </table>
 </div>
 </body>

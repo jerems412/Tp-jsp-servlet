@@ -18,13 +18,23 @@
 		<th>NOM</th>
 		<th>ACTIONS</th>
 	</tr>
-	<c:forEach items ="${droits }" var="droit">
+	<tr>
+		<td>1</td>
+		<td>droit 1</td>
+		<td><button>Delete</button></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>droit 2</td>
+		<td><button>Delete</button></td>
+	</tr>
+	<!--  <c:forEach items ="${droits }" var="droit">
 		<tr>
 			<td>${droit.id }</td>
 			<td>${droit.name }</td>
 			<td><button>Delete</button></td>
 		</tr>
-	</c:forEach>
+	</c:forEach>-->
 </table>
 </div>
 </body>
